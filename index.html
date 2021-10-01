@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>image cutter</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Zygomatic">
+	<!-- Programming by WebGear, webgear.nl -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	
+	
+	
+	<link rel="stylesheet" href="/main.css" type="text/css">
+	<script async src="/one.js"></script>
+	<script defer src="/poly.js"></script>
+	<script defer src="/145.js"></script>
+	<script defer src="/1452.js" onload="Page.init();App.init()"></script>
+
+</head>
+<body>
+
+	<div id="zygomaticBar">
+		<table><tr><td class="site"><a href="https://www.photoenlarger.com" title="Enlarge your images and photos" target="zygomatic"><i class="photoenlarger"></i> <span>Photo Enlarger</span></a></td><td class="site"><a href="https://www.postermaker.com" title="Design your own posters, flyers, memes and typography design" target="zygomatic"><i class="postermaker"></i> <span>Poster Maker</span></a></td><td class="site"><a href="https://www.photofilters.com" title="Photo filters and image effects" target="zygomatic"><i class="photofilters"></i> <span>Photo Filters</span></a></td><td class="site"><a href="https://www.chartle.com" title="Online Chart and Graph maker" target="zygomatic"><i class="chartle"></i> <span>Chartle</span></a></td><td class="site"><a href="https://www.coloringonline.com" title="Online coloring books and pages" target="zygomatic"><i class="coloring"></i> <span>Coloring Online</span></a></td><td class="site"><a href="https://www.changefaces.com" title="Change the face on a photo with another face and do a face swap" target="zygomatic"><i class="changefaces"></i> <span>Change Faces</span></a></td><td class="site zmore" onclick="ZBmore.style.display=(ZBmore.style.display=='none')?'block':'none'">More <span class="caret zmore"></span><ul id="ZBmore" class="dropdownMenu" style="display:none"><li><a class="zmore" href="https://www.mapimage.com" title="Static map image generator" target="zygomatic"><i class="mapimage"></i> Map Image</a></li><li><a class="zmore" href="https://www.photoresizer.com" title="Resize and crop your photos online" target="zygomatic"><i class="photoresizer"></i> Photo Resizer</a></li><li><a class="zmore" href="https://www.printscreenshot.com" title="Capture screenshots, annotate them with text and shapes" target="zygomatic"><i class="printscreenshot"></i> Print Screenshot</a></li><li><a class="zmore" href="https://www.youtubetrimmer.com" title="Trim and Crop Youtube videos" target="zygomatic"><i class="youtubetrimmer"></i> Youtube Trimmer</a></li><li><a class="zmore" href="https://www.toonytool.com" title="Create comics, cartoons and memes online and share your work on social media" target="zygomatic"><i class="toonytool"></i> Toony Tool</a></li><li><a class="zmore" href="https://www.mindmapeditor.com" title="Online Mind Map Maker" target="zygomatic"><i class="mindmapeditor"></i> Mind Map Editor</a></li><li><a class="zmore" href="https://www.qrapp.com" title="QR code generator and scanner" target="zygomatic"><i class="qrapp"></i> QR App</a></li><li><a class="zmore" href="https://www.glitterphoto.net" title="Pimp your photos with glitters, stamps, bubbles, frames and effects" target="zygomatic"><i class="glitterphoto"></i> GlitterPhoto</a></li><li><a class="zmore" href="https://www.photocollage.com" title="Create photo collages online, a.o. for Facebook" target="zygomatic"><i class="collage"></i> Photo Collage</a></li><li><a class="zmore" href="https://www.fakechatapp.com" title="Create fake chats" target="zygomatic"><i class="fakechatapp"></i> Fake Chat App</a></li><li><a class="zmore" href="https://www.wordclouds.com" title="Free online word cloud generator and tag cloud creator" target="zygomatic"><i class="wordcloud"></i> Word Clouds</a></li><li><a class="zmore" href="https://www.diagrameditor.com" title="Create diagrams online" target="zygomatic"><i class="diagrameditor"></i> Diagram Editor</a></li><li><a class="zmore" href="https://www.files2zip.com" title="Zip and unzip files online" target="zygomatic"><i class="files2zip"></i> Files2Zip</a></li><li><a class="zmore" href="https://www.2pdfconverter.com" title="Convert documents to PDF and PDF to other document formats" target="zygomatic"><i class="docconverter"></i> PDF converter</a></li></ul></td>
+		</tr></table>
+	</div>
+	<script>
+		var ZBmore = document.getElementById('ZBmore'), fn = function(e) {
+			if (!/zmore/.test(e.target.className)) { ZBmore.style.display='none'; }
+		}
+		document.addEventListener('click', fn);
+		document.addEventListener('touchstart', fn);
+	</script>
+ <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+	<div class="container-fluid">
+		<h1 title="Photo Editor">
+			<a class="navbar-brand" href="/editor">
+				<img src="/logo-en.png" alt="Photo Editor" height="40">
+			</a>
+		</h1>
+		
+		
+	</div>
+</nav>
+
+
+
+
+
+
+<div id="canvasContainer">
+	
+
+	<div id="canvases">
+		<canvas id="camanCanvas" data-caman-hidpi-disabled style="display:none"></canvas>
+		<img id="orgImg" src="/Lighthouse.jpg" width="1920" height="1280" alt="" data-name="Lighthouse.jpg">	</div><!--/#canvases-->
+
+	<div id="dragTip" data-ctrl="[Ctrl]"></div>
+</div><!--/#canvasContainer-->
+
+</body>
+</html>
